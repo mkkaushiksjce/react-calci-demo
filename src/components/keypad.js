@@ -34,18 +34,36 @@ class KeyPad extends Component {
   };
 
   render() {
+    let darkMode = this.state.darkMode;
+    let scientificMode = this.state.scientificMode;
     return (
       <div className="button">
-        <button
-          id="scientificSelect"
-          name="CE"
-          onClick={e => this.props.onClick(e.target.name)}
-        >
-          Scientific
-        </button>
-        <button name="Dark" onClick={e => this.props.onClick(e.target.name)}>
-          Dark
-        </button>
+        {scientificMode ? (
+          <button
+            id="scientificSelect"
+            name="CE"
+            onClick={this.toggleScientific}
+          >
+            Scientific
+          </button>
+        ) : (
+          <button
+            id="scientificSelect"
+            name="CE"
+            onClick={this.toggleScientific}
+          >
+            Normal
+          </button>
+        )}
+        {darkMode ? (
+          <button name="Dark" onClick={e => this.props.onClick(e.target.name)}>
+            Light
+          </button>
+        ) : (
+          <button name="Dark" onClick={e => this.props.onClick(e.target.name)}>
+            Dark
+          </button>
+        )}
         <button name="C" onClick={e => this.props.onClick(e.target.name)}>
           C
         </button>
@@ -60,13 +78,13 @@ class KeyPad extends Component {
         <button name="3" onClick={e => this.props.onClick(e.target.name)}>
           3
         </button>
-        {true ? (
+        {scientificMode ? (
           <button name="+" onClick={e => this.props.onClick(e.target.name)}>
             +
           </button>
         ) : (
           <button name="-" onClick={e => this.props.onClick(e.target.name)}>
-            -
+            +/-
           </button>
         )}
         <br />
@@ -80,7 +98,7 @@ class KeyPad extends Component {
         <button name="6" onClick={e => this.props.onClick(e.target.name)}>
           6
         </button>
-        {true ? (
+        {scientificMode ? (
           <button name="-" onClick={e => this.props.onClick(e.target.name)}>
             -
           </button>
@@ -100,7 +118,7 @@ class KeyPad extends Component {
         <button name="9" onClick={e => this.props.onClick(e.target.name)}>
           9
         </button>
-        {true ? (
+        {scientificMode ? (
           <button name="*" onClick={e => this.props.onClick(e.target.name)}>
             x
           </button>
@@ -120,7 +138,7 @@ class KeyPad extends Component {
         <button name="=" onClick={e => this.props.onClick(e.target.name)}>
           =
         </button>
-        {true ? (
+        {scientificMode ? (
           <button name="/" onClick={e => this.props.onClick(e.target.name)}>
             ÷
           </button>
