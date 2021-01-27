@@ -42,6 +42,13 @@ class KeyPad extends Component {
     return (
       <div className="button">
         <div className={ClassNames("result", { "result-dark": darkMode })}>
+          {/*
+            <input
+              type="text"
+              value={result}
+              onKeyDown={e => this.props.onKeypadPress(e)}
+            />
+          */}
           <p>{result}</p>
         </div>
         {scientificMode ? (

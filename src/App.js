@@ -45,6 +45,15 @@ class App extends Component {
     }
   };
 
+  onKeypadPress = e => {
+    console.log("event");
+  };
+
+  calculateScientific = () => {
+    12;
+    console.log("scientific");
+  };
+
   reset = () => {
     this.setState({
       result: ""
@@ -62,7 +71,11 @@ class App extends Component {
       <div>
         <div className="calculator-body">
           <h1>Calculator</h1>
-          <KeyPad result={this.state.result} onClick={this.onClick} />
+          <KeyPad
+            result={this.state.result}
+            onClick={this.onClick}
+            onKeypadPress={this.onKeypadPress}
+          />
         </div>
       </div>
     );

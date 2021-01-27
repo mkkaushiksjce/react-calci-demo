@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.result {
+  border: 1px solid black;
+  border-bottom: none;
+}
 .result p {
   font-size: 40px;
   margin: 5px;
@@ -18,7 +22,6 @@
   display: block;
   background-color: #bbb;
   color: black;
-  cursor: pointer;
 }
 
 button {
@@ -26,6 +29,8 @@ button {
   height: 60px;
   font-size: 30px;
   vertical-align: middle;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .digits-dark {
