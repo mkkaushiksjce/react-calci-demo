@@ -65,14 +65,6 @@ class App extends Component {
           <h1>KeepWorks Calculator</h1>
           <Result result={this.state.result} />
           <KeyPad onClick={this.onClick} />
-          <div className="theme-wrap cf">
-            <div className="light btn f-l" name="Light">
-              Light
-            </div>
-            <div className="dark btn f-r" name="Light">
-              Dark
-            </div>
-          </div>
         </div>
       </div>
     );
