@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./app.css";
-import Result from "./components/result";
 import KeyPad from "./components/keypad";
 
 class App extends Component {
@@ -63,8 +62,7 @@ class App extends Component {
       <div>
         <div className="calculator-body">
           <h1>Calculator</h1>
-          <Result result={this.state.result} />
-          <KeyPad onClick={this.onClick} />
+          <KeyPad result={this.state.result} onClick={this.onClick} />
         </div>
       </div>
     );

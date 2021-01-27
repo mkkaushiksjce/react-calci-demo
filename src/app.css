@@ -30,14 +30,14 @@ button {
 
 .digits-dark {
   color: white;
-  background: black;
+  background: #5d5e5e;
 }
 
-.operation-dark {
+.operations-dark {
   background: #f2a23c;
 }
 
-#resultDark {
+.result-dark {
   background: #323232;
 }
 
