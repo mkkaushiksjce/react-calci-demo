@@ -1,6 +1,38 @@
 import React, { Component } from "react";
 
 class KeyPad extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scientificMode: false,
+      darkMode: false
+    };
+  }
+
+  toggleScientific = () => {
+    if (this.state.scientificMode) {
+      this.setState({
+        scientificMode: false
+      });
+    } else {
+      this.setState({
+        scientificMode: true
+      });
+    }
+  };
+
+  toggleDarkMode = () => {
+    if (this.state.darkMode) {
+      this.setState({
+        darkMode: false
+      });
+    } else {
+      this.setState({
+        darkMode: true
+      });
+    }
+  };
+
   render() {
     return (
       <div className="button">

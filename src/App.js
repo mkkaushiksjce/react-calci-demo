@@ -4,8 +4,8 @@ import Result from "./components/result";
 import KeyPad from "./components/keypad";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       result: ""

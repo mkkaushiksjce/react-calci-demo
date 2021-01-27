@@ -17,12 +17,26 @@
 .button {
   display: block;
   background-color: #bbb;
+  color: black;
 }
 
 button {
   width: 25%;
   height: 60px;
   font-size: 30px;
+}
+
+.digits-dark {
+  color: white;
+  background: black;
+}
+
+.operation-dark {
+  background: #f2a23c;
+}
+
+#resultDark {
+  background: #323232;
 }
 
 #scientificSelect {
