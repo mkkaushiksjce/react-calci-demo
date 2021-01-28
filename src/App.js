@@ -50,12 +50,22 @@ class App extends Component {
   };
 
   calculateScientific = button => {
-    if (button === "=") {
-    } else if (button === "=") {
-    } else if (button === "=") {
-    } else if (button === "=") {
-    } else {
+    let { result } = this.state;
+    let updatedResult;
+    if (button === "invertSign") {
+      updatedResult = -1 * result;
+    } else if (button === "square") {
+      updatedResult = result * result;
+    } else if (button === "cube") {
+      updatedResult = result * result * result;
+    } else if (button === "sqrt") {
+      if (result < 0) {
+        return;
+      } else {
+        updatedResult = Math.sqrt(result);
+      }
     }
+    this.setState({ result: updatedResult });
   };
 
   reset = () => {

@@ -127,7 +127,7 @@ class KeyPad extends Component {
           </button>
         ) : (
           <button
-            name="-"
+            name="invertSign"
             className={ClassNames({ "operations-dark": darkMode })}
             onClick={e => this.props.onClickScientific(e.target.name)}
           >
@@ -167,7 +167,7 @@ class KeyPad extends Component {
           </button>
         ) : (
           <button
-            name="x2"
+            name="square"
             className={ClassNames({ "operations-dark": darkMode })}
             onClick={e => this.props.onClickScientific(e.target.name)}
           >
@@ -208,7 +208,7 @@ class KeyPad extends Component {
         ) : (
           <button
             className={ClassNames({ "operations-dark": darkMode })}
-            name="sqrt"
+            name="cube"
             onClick={e => this.props.onClickScientific(e.target.name)}
           >
             x<sup>3</sup>
@@ -247,9 +247,9 @@ class KeyPad extends Component {
           </button>
         ) : (
           <button
-            name=" "
+            name="sqrt"
             className={ClassNames({ "operations-dark": darkMode })}
-            onClick={e => this.props.onClick(e.target.name)}
+            onClick={e => this.props.onClickScientific(e.target.name)}
           >
             &#8730;
           </button>
