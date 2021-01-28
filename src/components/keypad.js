@@ -76,7 +76,7 @@ class KeyPad extends Component {
             className={ClassNames({ "digits-dark": darkMode })}
             onClick={this.toggleDarkMode}
           >
-            Dark
+            Light
           </button>
         ) : (
           <button
@@ -84,7 +84,7 @@ class KeyPad extends Component {
             className={ClassNames({ "digits-dark": darkMode })}
             onClick={this.toggleDarkMode}
           >
-            Light
+            Dark
           </button>
         )}
         <button
@@ -129,7 +129,7 @@ class KeyPad extends Component {
           <button
             name="-"
             className={ClassNames({ "operations-dark": darkMode })}
-            onClick={e => this.props.onClick(e.target.name)}
+            onClick={e => this.props.onClickScientific(e.target.name)}
           >
             +/-
           </button>
@@ -169,9 +169,9 @@ class KeyPad extends Component {
           <button
             name="x2"
             className={ClassNames({ "operations-dark": darkMode })}
-            onClick={e => this.props.onClick(e.target.name)}
+            onClick={e => this.props.onClickScientific(e.target.name)}
           >
-            x2
+            x<sup>2</sup>
           </button>
         )}
         <br />
@@ -209,9 +209,9 @@ class KeyPad extends Component {
           <button
             className={ClassNames({ "operations-dark": darkMode })}
             name="sqrt"
-            onClick={e => this.props.onClick(e.target.name)}
+            onClick={e => this.props.onClickScientific(e.target.name)}
           >
-            Sqrt
+            x<sup>3</sup>
           </button>
         )}
         <br />
@@ -250,7 +250,9 @@ class KeyPad extends Component {
             name=" "
             className={ClassNames({ "operations-dark": darkMode })}
             onClick={e => this.props.onClick(e.target.name)}
-          />
+          >
+            &#8730;
+          </button>
         )}
         <br />
       </div>
