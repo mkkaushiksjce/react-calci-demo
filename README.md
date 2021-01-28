@@ -4,6 +4,6 @@
 
 React Simple Calculator: 
 
-<img src="./dark_normal.png" width="200">
+<img src="./dark_normal.png" width="300">
 
-![alt react-calculator-simple](dark_scientific.png = 250x250)
+<img src="./dark_scientific.png" width="300">
