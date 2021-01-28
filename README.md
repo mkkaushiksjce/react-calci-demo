@@ -5,3 +5,6 @@
 React Simple Calculator: 
 
 ![alt react-calculator-simple](dark_normal.png)
+
+
+![alt react-calculator-simple](dark_scientific.png)
