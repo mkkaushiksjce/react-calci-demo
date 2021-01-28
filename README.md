@@ -4,7 +4,6 @@
 
 React Simple Calculator: 
 
-![alt react-calculator-simple](dark_normal.png = 250x250)
-
+<img src="./dark_normal.png" width="200">
 
 ![alt react-calculator-simple](dark_scientific.png = 250x250)
